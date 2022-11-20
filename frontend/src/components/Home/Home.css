@@ -1,0 +1,121 @@
+.banner {
+  background-image: linear-gradient(to right, #635dc0, #3037ae);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.banner h1 {
+  margin: 5rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-family: "Roboto";
+}
+.banner p {
+  font: 600 1.4 "Lucida Sans";
+}
+.banner a button {
+  width: 7rem;
+  height: 2.5rem;
+  margin-bottom: 4rem;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  font: 600 1rem "Roboto";
+}
+.banner a button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 73%, 0% 100%, 100% 100%);
+  max-width: 100%;
+}
+.homeHeading {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(21, 21, 21, 00.5);
+  width: 20rem;
+  margin: 5rem auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2rem auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productCard {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2rem;
+  transition: all 0.5s;
+  padding-bottom: 0.5rem;
+}
+.productCard img {
+  width: 14rem;
+}
+.productCard div {
+  margin: 0.2vmax;
+  display: flex;
+  justify-content: flex-start;
+}
+.productCard div .rew {
+  margin: 0.7vmax;
+  font: 300 0.7rem "Roboto";
+}
+.productCard p {
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  margin: 1rem 0.5rem;
+  margin-bottom: 0;
+  color: rgb(101, 100, 100);
+}
+.productCard > span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: tomato;
+}
+
+.productCard:hover {
+  box-shadow: 3px 3px 5px #ccc;
+  transform: translateY(-1rem);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard p {
+    font-size: 1.7rem;
+  }
+  .productCard div {
+    margin: 0rem;
+    display: block;
+  }
+  .productCard span {
+    font-size: 1.5rem;
+  }
+  .productCard div .rew {
+    margin: 0 0.5rem;
+    font: 300 1rem "Roboto";
+  }
+}
