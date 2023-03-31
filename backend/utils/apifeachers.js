@@ -14,7 +14,8 @@ class ApiFeacture {
       : {};                                                                              
     this.query = this.query.find({ ...keyword });                                        
     return this;                                                                         
-  }                                                                                      
+  }
+                                                                                       
   filter() {                                                                             
     const querycopy = { ...this.queryStr };                                              
                                                                                          

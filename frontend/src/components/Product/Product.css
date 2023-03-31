@@ -57,3 +57,9 @@
   background-color: tomato;
   color: white;
 }
+.filterBox{
+  width: 10vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 2vmax;
+}
